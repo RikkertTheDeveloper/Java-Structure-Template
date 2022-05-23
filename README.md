@@ -8,7 +8,7 @@
 Verdere veranderingen kunnen in de toekomst komen.
 </span></kbd>
 
-**Dit structuur is het Java strctuur uitgedrukt in een makkelijk te gebruiken stuctuur en utilities.** <br>
+**Dit structuur is het Java strctuur uitgedrukt in een makkelijk te gebruiken structuur en utilities.** <br>
 
 ## Documentatie
 **In de 'Markdown' folder valt documentatie te vinden over de volgende onderwerpen:**
