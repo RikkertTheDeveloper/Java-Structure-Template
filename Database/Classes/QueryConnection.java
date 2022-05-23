@@ -30,7 +30,7 @@ public class QueryConnection {
 
     public void exucute(String query) {
         currentDatabase.connect();
-        currentDatabase.get(query);
+        currentDatabase.exucute(query);
         currentDatabase.disconnect();
     }
 

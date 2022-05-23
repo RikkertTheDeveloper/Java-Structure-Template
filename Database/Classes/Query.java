@@ -31,9 +31,8 @@ public class Query {
         * Deze functie maakt een QueryConnection en zorgt ervoor dat het commando uitgevoerd word.
         * @see QueryConnection
     */
-    public void Exucute() {
+    public void exucute() {
         QueryConnection newConnection = new QueryConnection();
         newConnection.exucute(this.queryCommand);
-        newConnection.close();
     }
 }

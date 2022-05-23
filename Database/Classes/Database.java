@@ -9,7 +9,7 @@ public class Database {
 
     // Defineer de constanten die we gebruiken voor de database connectie.
     public String host = "localhost";
-    public String database = "fietsenwinkel";
+    public String database = "javadatabase";
     public String user = "root";
     public String password = "";
     public Connection currentConnection;
@@ -51,6 +51,17 @@ public class Database {
         }
 
         return null;
+    }
+
+    public void exucute(String sql) {
+        try {
+            Statement stmt = this.currentConnection.createStatement();
+            stmt.executeUpdate(sql);
+            System.out.println("Query uitgevoerd");
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            System.exit(0);
+        }
     }
 
     /**

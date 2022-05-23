@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import javax.swing.JComboBox;
 
 import Controllers.OrderController;
+import Interfaces.View;
 import Models.Product;
 import Models.User;
 import javafx.scene.Scene;
@@ -20,7 +21,7 @@ import javafx.stage.Stage;
 /**
     * Deze klasse word gebruikt om de view te laten zien waar de gebruiker dingen kan bestellen.
 */
-public class OrderView {
+public class OrderView implements View {
 
     // Zet de UI elementen in de klasse die we zullen gebruiken.
     private OrderController orderController = new OrderController(this);
@@ -48,7 +49,7 @@ public class OrderView {
         * Deze functie zorgt ervoor dat alle componenten van de scene gerenderd worden.
         * @see OrderView
    */
-   public void render() {
+   public void Render() {
        System.out.println("OrderView.Render() | Rendering OrderView.java");
        Pane viewPane = new Pane();
        Scene viewScene = new Scene(viewPane);
@@ -117,6 +118,13 @@ public class OrderView {
        viewPane.getChildren().addAll(naamLabel, adresLabel, mobielLabel, pizzaLabel, orderSummary);
        viewPane.getChildren().addAll(addKnop, verzendKnop, nieuwKnop);
        viewPane.getChildren().addAll(naamInput, adresInput, mobielInput, productInput);
+   }
+
+   /**
+        * Deze functie sluit de view.
+   */
+   public void Close() {
+       viewStage.close();
    }
 
    /**

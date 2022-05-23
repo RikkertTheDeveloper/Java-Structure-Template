@@ -1,3 +1,4 @@
+import Database.Data.DrinksTable;
 import Views.OrderView;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -18,8 +19,11 @@ public class Main extends Application {
 
             // Zet een nieuw 'OrderView' object op en render deze.
             OrderView currentOrderView = new OrderView(primaryStage);
-            currentOrderView.render();
+            currentOrderView.Render();
             currentOrderView.SetupCallbacks();
+
+            DrinksTable tableCreation = new DrinksTable();
+            tableCreation.Create();
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -21,7 +21,7 @@ public class Notification {
     }
 
     /**
-        * Deze functie laat de notificatie op eht scherm zien.
+        * Deze functie laat de notificatie op het scherm zien.
     */
     public void Display() {
         Alert newNotification = new Alert(Type);

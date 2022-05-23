@@ -18,4 +18,9 @@ public interface Table {
         * @see https://dev.mysql.com/doc/refman/8.0/en/drop-table.html
     */
     public void Drop();
+
+    /**
+        * Laat de tabel verwijderd worden al deze al bestaat.
+    */
+    public void DropIfExists();
 }
