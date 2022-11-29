@@ -1,12 +1,5 @@
-## Moderne Java Applicatie Structuur
-### **Door Rick Arendsen**
-
+![Banner](https://repository-images.githubusercontent.com/495175793/4d642337-9bca-454d-be1d-13d54fcbdd87)
 <br>
-
-<kbd style='background:rgba(0,0,250,.5); font-weight: 900'>Attentie: <span style='font-weight: 300'>Dit document is up-to-date vanaf 16/05/2022.
-<br>
-Verdere veranderingen kunnen in de toekomst komen.
-</span></kbd>
 
 **Dit structuur is het Java strctuur uitgedrukt in een makkelijk te gebruiken structuur en utilities.** <br>
 
